@@ -10,7 +10,7 @@ export default function CardList() {
     },
   ];
   return (
-    <div className=" flex flex-col gap-12 col-span-1 bg-rose-50 p-4 rounded-2xl self-start">
+    <div className=" flex flex-col gap-8 col-span-1 bg-rose-50 p-4 rounded-2xl self-start">
       <h2 className="font-bold text-myRed text-2xl">Your Cart(7)</h2>
 
       <ul className="flex gap-2">

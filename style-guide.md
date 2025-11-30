@@ -11,37 +11,25 @@ The designs were created to the following widths:
 
 ## Colors
 
-### Neutral
+- Red: hsl(14, 86%, 42%)
+- Green: hsl(159, 69%, 38%)
 
-- **Neutral 900**: hsl(243, 96%, 9%)
-- **Neutral 800**: hsl(243, 27%, 20%)
-- **Neutral 700**: hsl(243, 23%, 24%)
-- **Neutral 600**: hsl(243, 23%, 30%)
-- **Neutral 300**: hsl(250, 6%, 84%)
-- **Neutral 200**: hsl(250, 6%, 84%)
-- **Neutral 0**: hsl(0, 0%, 100%)
-
-### Orange
-
-- **Orange 500**: hsl(28, 100%, 52%)
-
-### Blue
-
-- **Blue 500**: hsl(233, 67%, 56%)
-- **Blue 700**: hsl(248, 70%, 36%)
+- Rose 50: hsl(20, 50%, 98%)
+- Rose 100: hsl(13, 31%, 94%)
+- Rose 300: hsl(14, 25%, 72%)
+- Rose 400: hsl(7, 20%, 60%)
+- Rose 500: hsl(12, 20%, 44%)
+- Rose 900: hsl(14, 65%, 9%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 18px
+- Font size (product names): 16px
 
 ### Font
 
-- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
-- Weights: 300, 500, 600, 600i, 700
-
-- Family: [Bricolage Grotesque](https://fonts.google.com/specimen/Bricolage+Grotesque)
-- Weights: 700
+- Family: [Red Hat Text](https://fonts.google.com/specimen/Red+Hat+Text)
+- Weights: 400, 600, 700
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a design system and tablet layout to help you build a more accurate solution faster.

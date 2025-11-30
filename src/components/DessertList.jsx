@@ -21,7 +21,7 @@ export default function DessertList() {
       <ul className="grid grid-cols-3">
         {desserts.map((dessert) => (
           <li key={dessert.id}>
-            <DessertItem item={dessert} />
+            <DessertItem dessert={dessert} />
           </li>
         ))}
       </ul>

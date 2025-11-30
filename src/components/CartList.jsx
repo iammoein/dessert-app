@@ -1,28 +1,21 @@
-import { useEffect, useState } from "react";
 import CartItem from "./CartItem";
 
-export default function CartList() {
-  const [desserts, setDesserts] = useState([]);
-
-  useEffect(() => {
-    async function fetchDesserts() {
-      const res = await fetch("http://localhost:5000/desserts");
-      const data = await res.json();
-      setDesserts(data);
-    }
-
-    fetchDesserts();
-  }, []);
-
+export default function CardList() {
+  const fakeCart = [
+    {
+      name: "Salted Caramel Brownie",
+      quantity:1,
+      category: "Brownie",
+      price: 4.5,
+    },
+  ];
   return (
-    <div className="flex flex-col gap-8">
-      <h1 className="font-bold text-4xl">Desserts</h1>
+    <div className="col-span-1 bg-rose-50 p-4 rounded-2xl">
+      <h2 className="font-bold text-myRed text-2xl mb-8">Your Cart(7)</h2>
 
-      <ul className="grid grid-cols-3">
-        {desserts.map((dessert) => (
-          <li key={dessert.id}>
-            <CartItem item={dessert} />
-          </li>
+      <ul className="flex gap-2">
+        {fakeCart.map((item) => (
+          <CartItem item={item} />
         ))}
       </ul>
     </div>

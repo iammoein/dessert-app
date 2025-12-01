@@ -1,5 +1,15 @@
+import { useDispatch } from "react-redux";
+import { deleteItem } from "../features/cart/cartSlice";
+
 export default function CartItem({ item }) {
   const totalPrice = item.quantity * item.price;
+  console.log(item);
+
+  const dispatch = useDispatch();
+
+  function handleDeleteItem(id) {
+    dispatch(deleteItem(id));
+  }
 
   return (
     <div className="flex justify-between items-center w-full">
@@ -12,7 +22,10 @@ export default function CartItem({ item }) {
         </div>
       </div>
 
-      <button className="w-4 h-4 flex items-center justify-center rounded-full border border-rose-400 cursor-pointer text-rose-400 hover:text-rose-500 hover:border-rose-500">
+      <button
+        className="w-4 h-4 flex items-center justify-center rounded-full border border-rose-400 cursor-pointer text-rose-400 hover:text-rose-500 hover:border-rose-500"
+        onClick={() => handleDeleteItem(item.dessertId)}
+      >
         <span className="text-[15px] leading-none">×</span>
       </button>
     </div>

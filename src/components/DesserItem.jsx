@@ -8,7 +8,7 @@ export default function Dessertdessert({ dessert }) {
 
   function handleAddToCart() {
     const newItem = {
-      dessertId: id,
+      id: id,
       name: name,
       category: category,
       quantity: 1,

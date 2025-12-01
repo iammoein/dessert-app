@@ -24,7 +24,7 @@ export default function CartItem({ item }) {
 
       <button
         className="w-4 h-4 flex items-center justify-center rounded-full border border-rose-400 cursor-pointer text-rose-400 hover:text-rose-500 hover:border-rose-500"
-        onClick={() => handleDeleteItem(item.dessertId)}
+        onClick={() => handleDeleteItem(item.id)}
       >
         <span className="text-[15px] leading-none">×</span>
       </button>

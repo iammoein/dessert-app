@@ -12,7 +12,7 @@ export default function CartItem({ item }) {
   }
 
   return (
-    <div className="flex justify-between items-center w-full">
+    <div className="flex justify-between items-center w-full pb-4 border-b border-b-rose-100">
       <div>
         <h3 className="text-sm font-semibold text-rose-500">{item.name}</h3>
         <div className="flex gap-4">

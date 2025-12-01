@@ -15,10 +15,10 @@ export default function DessertList() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-8 col-span-2">
+    <div className="flex flex-col gap-8">
       <h1 className="font-bold text-4xl">Desserts</h1>
 
-      <ul className="grid grid-cols-3">
+      <ul className="grid grid-cols-3 gap-x-12 gap-y-12">
         {desserts.map((dessert) => (
           <li key={dessert.id}>
             <DessertItem dessert={dessert} />

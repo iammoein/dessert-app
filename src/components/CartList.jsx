@@ -14,7 +14,7 @@ export default function CardList() {
   return (
     <>
       {cart.length > 0 ? (
-        <div className=" flex flex-col gap-8 col-span-1 bg-rose-50 p-4 rounded-2xl self-start">
+        <div className=" flex flex-col gap-8 bg-rose-50 p-4 rounded-2xl self-start">
           <h2 className="font-bold text-myRed text-2xl">
             Your Cart({totalCartQunatity})
           </h2>

@@ -3,14 +3,12 @@ import {
   getCart,
   getTotalCartQuantity,
 } from "../features/cart/cartSlice";
+import { openModal } from "../features/modal/modalSlice";
 
 import CartItem from "./CartItem";
 import Button from "./Button";
 import cakeIcon from "../assets/images/illustration-empty-cart.svg";
 import TotalPrice from "./TotalPrice";
-import { useState } from "react";
-import CartOverview from "./cartOverview";
-import { openModal } from "../features/modal/modalSlice";
 
 export default function CardList() {
   const cart = useSelector(getCart);

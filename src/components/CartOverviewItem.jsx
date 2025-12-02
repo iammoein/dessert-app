@@ -3,7 +3,7 @@ export default function CartOverviewItem({ item }) {
     <li className="flex justify-between items-center pb-4 border-b border-b-rose-300">
       <div className="flex gap-4">
         <img
-          src={item.thumbnail}
+          src={item.image}
           className="w-12 h-12 rounded-xl"
           alt="dessert thumbnail"
         />

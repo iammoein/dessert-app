@@ -12,7 +12,7 @@ export default function CartItem({ item }) {
   return (
     <div className="flex justify-between items-center w-full pb-4 border-b border-b-rose-100">
       <div>
-        <h3 className="text-sm font-semibold text-rose-500">{item.name}</h3>
+        <h3 className="text-sm font-semibold text-rose-900">{item.name}</h3>
         <div className="flex gap-4">
           <small className="text-myRed">{item.quantity}x</small>
           <small className="font-light text-rose-300">@{item.price}</small>

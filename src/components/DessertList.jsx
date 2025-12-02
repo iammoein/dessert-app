@@ -16,9 +16,9 @@ export default function DessertList() {
 
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="font-bold text-4xl">Desserts</h1>
+      <h1 className="font-bold text-4xl text-rose-900">Desserts</h1>
 
-      <ul className="grid grid-cols-1 gap-x-12 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+      <ul className="grid grid-cols-1 gap-x-12 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
         {desserts.map((dessert) => (
           <li key={dessert.id}>
             <DessertItem dessert={dessert} />

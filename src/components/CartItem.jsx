@@ -3,8 +3,6 @@ import { deleteItem } from "../features/cart/cartSlice";
 
 export default function CartItem({ item }) {
   const totalPrice = item.quantity * item.price;
-  console.log(item);
-
   const dispatch = useDispatch();
 
   function handleDeleteItem(id) {
@@ -26,7 +24,15 @@ export default function CartItem({ item }) {
         className="w-4 h-4 flex items-center justify-center rounded-full border border-rose-400 cursor-pointer text-rose-400 hover:text-rose-500 hover:border-rose-500"
         onClick={() => handleDeleteItem(item.id)}
       >
-        <span className="text-[15px] leading-none">×</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="10"
+          viewBox="0 0 10 10"
+          fill="currentColor"
+        >
+          <path d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z" />
+        </svg>
       </button>
     </div>
   );

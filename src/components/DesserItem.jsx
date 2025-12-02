@@ -7,7 +7,9 @@ import {
 import cartIcon from "../assets/images/icon-add-to-cart.svg";
 
 export default function DessertItem({ dessert }) {
-  const { id, name, category, price } = dessert;
+  const { id, name, category, price, image } = dessert;
+  const { thumbnail } = image;
+  console.log(thumbnail);
 
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.cart);
@@ -21,6 +23,7 @@ export default function DessertItem({ dessert }) {
       name: name,
       category: category,
       quantity: 1,
+      image: thumbnail,
       price: price,
       totalPrice: price * 1,
     };
@@ -30,7 +33,7 @@ export default function DessertItem({ dessert }) {
 
   return (
     <div className="w-64 relative">
-      <picture >
+      <picture>
         <source media="(min-width: 1024px)" srcSet={dessert.image.desktop} />
         <source media="(min-width: 640px)" srcSet={dessert.image.tablet} />
         <img

@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   getCart,
   getTotalCartQuantity,
@@ -8,11 +8,17 @@ import CartItem from "./CartItem";
 import Button from "./Button";
 import cakeIcon from "../assets/images/illustration-empty-cart.svg";
 import TotalPrice from "./TotalPrice";
+import { useState } from "react";
+import CartOverview from "./cartOverview";
+import { openModal } from "../features/modal/modalSlice";
 
 export default function CardList() {
   const cart = useSelector(getCart);
 
   const totalCartQunatity = useSelector(getTotalCartQuantity);
+
+  const dispatch = useDispatch();
+
 
   return (
     <div className=" flex flex-col gap-8 bg-rose-50 px-4 py-8 rounded-2xl self-start">
@@ -36,7 +42,7 @@ export default function CardList() {
 
             <TotalPrice />
 
-         <Button className="">Confirm Order</Button>
+         <Button onClick={() => dispatch(openModal())}>Confirm Order</Button>
         </>
       )}
     </div>

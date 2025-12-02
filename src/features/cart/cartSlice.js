@@ -2,17 +2,20 @@ import { createSlice } from "@reduxjs/toolkit";
 import testIcon from '../../../public/images/image-cake-thumbnail.jpg';
 
 const initialState = {
-  cart: [
-    {
-      id: 1,
-      name: 'moein',
-      category: 'faf',
-      quantity: 1,
-      price: 32,
-      thumbnail: testIcon,
-      totalPrice: 42 * 1,
-    },
-  ],
+
+  cart: []
+
+  // cart: [
+  //   {
+  //     id: 1,
+  //     name: 'moein',
+  //     category: 'faf',
+  //     quantity: 1,
+  //     price: 32,
+  //     thumbnail: testIcon,
+  //     totalPrice: 42 * 1,
+  //   },
+  // ],
 };
 
 const cartSlice = createSlice({
@@ -43,7 +46,7 @@ const cartSlice = createSlice({
         state.cart = state.cart.filter((i) => i.id !== action.payload);
       }
     },
-    cleanCart() {
+    cleanCart(state) {
       state.cart = [];
     },
   },

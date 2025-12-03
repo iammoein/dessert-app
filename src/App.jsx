@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import CartList from "./components/CartList";
 import DessertList from "./components/DessertList";
-import CartOverview from "./components/cartOverview";
+import CartOverview from "./components/cartoverview_temp.jsx";
 
 export default function App() {
 const isOpen = useSelector(state => state.modal.isOpen);

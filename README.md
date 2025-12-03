@@ -1,16 +1,57 @@
-# React + Vite
+# Dessert Order Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern dessert ordering web application built with **React**, **Tailwind CSS**, **Vanilla JavaScript**, and **Redux** for state management.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Fully responsive UI built with Tailwind CSS
+* State management using Redux
+* Smooth interactions with a combination of React and Vanilla JavaScript
+* Clean and structured component-based architecture
+* Easy to extend and customize
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+* **React** – UI library
+* **Tailwind CSS** – Styling
+* **Redux** – State management
+* **JavaScript (Vanilla JS)** – Additional logic and interactions
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+  components/
+  assets/
+  features/
+```
+
+## 📦 Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/iammoein/dessert-app.git
+
+# Enter the project folder
+cd your-repo
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## 🧱 Build for Production
+
+```bash
+npm run build
+```
+
+## 🤝 Contributing
+
+Feel free to submit issues or pull requests if you'd like to improve the project.
+
+## 📜 License
+
+This project is licensed under the MIT License.

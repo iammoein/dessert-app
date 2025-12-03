@@ -2,6 +2,8 @@
 
 A modern dessert ordering web application built with **React**, **Tailwind CSS**, **Vanilla JavaScript**, and **Redux** for state management.
 
+See Demo: dessert-app-steel.vercel.app
+
 ## 🚀 Features
 
 * Fully responsive UI built with Tailwind CSS

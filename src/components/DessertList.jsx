@@ -6,9 +6,9 @@ export default function DessertList() {
 
   useEffect(() => {
     async function fetchDesserts() {
-      const res = await fetch("http://localhost:5000/desserts");
+      const res = await fetch("/db.json");
       const data = await res.json();
-      setDesserts(data);
+      setDesserts(data.desserts);
     }
 
     fetchDesserts();
